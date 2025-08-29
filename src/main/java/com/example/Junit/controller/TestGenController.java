@@ -33,7 +33,6 @@ public class TestGenController {
                 "DO NOT add, modify or ignore any line. DO NOT include the original code or explanations. Return only valid Java code.\n" +
                 request.getCodeSnippet();
 
-
         String testCode = aiService.generateJUnitTests(prompt);
 
         if (testCode == null || testCode.isBlank()) {
